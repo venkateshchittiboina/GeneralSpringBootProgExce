@@ -25,27 +25,38 @@
 		<sonar.organization>genspringboot-project</sonar.organization>
                 <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
-        <repository>
-           <id>springfeed</id>
-           <url>https://pkgs.dev.azure.com/SenthilAlagarsamy/az_artifact_demo/_packaging/springfeed/maven/v1</url>
-           <releases>
-              <enabled>true</enabled>
-           </releases>
-           <snapshots>
-               <enabled>true</enabled>
-           </snapshots>
-         </repository>
 	
-	<distributionManagement>
-           <id>springfeed</id>
-           <url>https://pkgs.dev.azure.com/SenthilAlagarsamy/az_artifact_demo/_packaging/springfeed/maven/v1</url>
-           <releases>
+	<!-- only for Azure DevOps - Used the below tag for feeds -->
+      <repositories>
+       <repository>
+        <id>springfeed</id>                 
+         <url>https://pkgs.dev.azure.com/SenthilAlagarsamy/az_artifact_demo/_packaging/springfeed/maven/v1</url>
+          <releases>
               <enabled>true</enabled>
-           </releases>
-           <snapshots>
-              <enabled>true</enabled>
-           </snapshots>
-         </<distributionManagement>>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+       </repositories>
+
+<!-- only for Azure DevOps - Used the below tag for feeds -->
+  <distributionManagement>
+     <repository>
+      <id>springfeed</id>
+      <url>https://pkgs.dev.azure.com/SenthilAlagarsamy/az_artifact_demo/_packaging/springfeed/maven/v1</url>
+      <layout>default</layout>
+      <name>OMD Maven Release Feed</name>
+      <uniqueVersion>true</uniqueVersion>
+    </repository>
+    <snapshotRepository>
+      <id>favacc_feed</id>
+      <url>https://pkgs.dev.azure.com/SenthilAlagarsamy/az_artifact_demo/_packaging/springfeed/maven/v1</url>
+      <layout>default</layout>
+      <name>OMD Maven Snapshot Feed</name>
+      <uniqueVersion>true</uniqueVersion>
+    </snapshotRepository>
+   </distributionManagement>     
 
 	<dependencies>
 		<dependency>
