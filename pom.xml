@@ -50,7 +50,7 @@
       <uniqueVersion>true</uniqueVersion>
     </repository>
     <snapshotRepository>
-      <id>favacc_feed</id>
+      <id>springfeed</id>
       <url>https://pkgs.dev.azure.com/SenthilAlagarsamy/az_artifact_demo/_packaging/springfeed/maven/v1</url>
       <layout>default</layout>
       <name>OMD Maven Snapshot Feed</name>
