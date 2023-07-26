@@ -7,12 +7,12 @@ trigger:
 - development
 
 pool:
-  name: salagarsAgentPool
+  vmImage: 'Ubuntu-20.04'
 
 steps:
 - task: Maven@3
   inputs:
-    mavenPomFile: pom.xml    // Path to your pom file
+    mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
