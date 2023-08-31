@@ -6,8 +6,10 @@
 trigger:
 - development
 
-pool: MyAgentPool
-
+pool:
+  name: 'MyAgentPool'
+  demands:
+  - npm
 steps:
 - task: Maven@4
   inputs:
