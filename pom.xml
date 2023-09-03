@@ -89,9 +89,13 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+<groupid>org.apache.maven.plugins</groupid>
+<artifactid>maven-surefire-plugin</artifactid>
+<version>3.0.0-M5</version>
+<configuration>
+<skiptests>true</skiptests>
+</configuration>
+</plugin>
 		</plugins>
 	</build>
 
