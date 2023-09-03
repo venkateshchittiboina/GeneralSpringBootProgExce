@@ -53,13 +53,7 @@
     <enabled>true</enabled>
   </snapshots>
 </repository>
-    <snapshotRepository>
-      <id>vchittiboina7</id>
-  <url>https://pkgs.dev.azure.com/vchittiboina7/_packaging/vchittiboina7/maven/v1</url>
-      <layout>default</layout>
-      <name>OMD Maven Snapshot Feed</name>
-      <uniqueVersion>true</uniqueVersion>
-    </snapshotRepository>
+    
    </distributionManagement>     
 
 	<dependencies>
