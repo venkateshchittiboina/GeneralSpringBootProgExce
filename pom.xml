@@ -28,7 +28,7 @@
 	</properties>
 	
 	<!-- only for Azure DevOps - Used the below tag for feeds -->
-	<reposiotories>
+	<repositories>
       <repository>
   <id>vchittiboina7</id>
   <url>https://pkgs.dev.azure.com/vchittiboina7/_packaging/vchittiboina7/maven/v1</url>
