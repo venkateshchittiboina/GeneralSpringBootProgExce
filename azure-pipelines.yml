@@ -29,7 +29,7 @@ steps:
     mavenVersionOption: 'Default'
     mavenAuthenticateFeed: false
     effectivePomSkip: false
-    sonarQubeRunAnalysis: false
+    sonarQubeRunAnalysis: true
 - task: SonarQubePublish@5
   inputs:
       pollingTimeoutSec: '300'
