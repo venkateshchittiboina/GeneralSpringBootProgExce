@@ -24,6 +24,7 @@
 		<java.version>1.8</java.version>
 		<sonar.organization>genspringboot-project</sonar.organization>
                 <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<maven.test.skip>true</maven.test.skip>
 	</properties>
 	
 	<!-- only for Azure DevOps - Used the below tag for feeds -->
@@ -89,13 +90,9 @@
 	<build>
 		<plugins>
 			<plugin>
-<groupId>org.apache.maven.plugins</groupId>
-<artifactId>maven-surefire-plugin</artifactId>
-<version>3.0.0-M5</version>
-<configuration>
-<skiptests>true</skiptests>
-</configuration>
-</plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
 		</plugins>
 	</build>
 
