@@ -54,8 +54,8 @@
   </snapshots>
 </repository>
     <snapshotRepository>
-      <id>springfeed</id>
-      <url>https://pkgs.dev.azure.com/SenthilAlagarsamy/az_artifact_demo/_packaging/springfeed/maven/v1</url>
+      <id>vchittiboina7</id>
+  <url>https://pkgs.dev.azure.com/vchittiboina7/_packaging/vchittiboina7/maven/v1</url>
       <layout>default</layout>
       <name>OMD Maven Snapshot Feed</name>
       <uniqueVersion>true</uniqueVersion>
