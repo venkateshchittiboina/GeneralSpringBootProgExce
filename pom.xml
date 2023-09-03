@@ -28,28 +28,31 @@
 	</properties>
 	
 	<!-- only for Azure DevOps - Used the below tag for feeds -->
-      <repositories>
-       <repository>
-        <id>springfeed</id>                 
-         <url>https://pkgs.dev.azure.com/SenthilAlagarsamy/az_artifact_demo/_packaging/springfeed/maven/v1</url>
-          <releases>
-              <enabled>true</enabled>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-        </repository>
-       </repositories>
+	<reposiotories>
+      <repository>
+  <id>vchittiboina7</id>
+  <url>https://pkgs.dev.azure.com/vchittiboina7/_packaging/vchittiboina7/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
+	</repositories>
 
 <!-- only for Azure DevOps - Used the below tag for feeds -->
   <distributionManagement>
      <repository>
-      <id>springfeed</id>
-      <url>https://pkgs.dev.azure.com/SenthilAlagarsamy/az_artifact_demo/_packaging/springfeed/maven/v1</url>
-      <layout>default</layout>
-      <name>OMD Maven Release Feed</name>
-      <uniqueVersion>true</uniqueVersion>
-    </repository>
+  <id>vchittiboina7</id>
+  <url>https://pkgs.dev.azure.com/vchittiboina7/_packaging/vchittiboina7/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
     <snapshotRepository>
       <id>springfeed</id>
       <url>https://pkgs.dev.azure.com/SenthilAlagarsamy/az_artifact_demo/_packaging/springfeed/maven/v1</url>
