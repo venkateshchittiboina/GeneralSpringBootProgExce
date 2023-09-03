@@ -9,9 +9,20 @@ trigger:
 pool:
   name: 'MyAgentPool'
 steps:
+- task: SonarQubePrepare@5
+  inputs:
+    SonarQube: 'My_SonarQube'
+    scannerMode: 'Other'
+    extraProperties: |
+      # Additional properties that will be passed to the scanner, 
+      # Put one key=value per line, example:
+      # sonar.exclusions=**/*.bin
+      sonar.projectName=MyShuttle
+      sonar.projectKey=MyShuttle
 - task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
+    goals: 'install sonar:sonar'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
@@ -19,6 +30,9 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
+  - task: SonarQubePublish@5
+    inputs:
+      pollingTimeoutSec: '300'
 - task: CopyFiles@2
   inputs:
     Contents: '**'
